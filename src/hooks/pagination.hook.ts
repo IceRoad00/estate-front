@@ -1,15 +1,14 @@
-import { findByDisplayValue } from "@testing-library/react";
 import { useEffect, useState } from "react";
 import { COUNT_PER_PAGE, COUNT_PER_SECTION } from "src/constant";
-import { BoardListItem } from "src/types";
 
 const usePagination = <T>() => {
-    const [boardList, setBoardList] = useState<T[]>([]);
     const [viewList, setViewList] = useState<T[]>([]);
-    const [totalLength, setTotalLength] = useState<number>(0);
+    const [boardList, setBoardList] = useState<T[]>([]);
+    const [pageList, setPageList] = useState<number[]>([1]);
+
     const [totalPage, setTotalPage] = useState<number>(1);
     const [currentPage, setCurrentPage] = useState<number>(1);
-    const [pageList, setPageList] = useState<number[]>([1]);
+    const [totalLength, setTotalLength] = useState<number>(0);
     const [totalSection, setTotalSection] = useState<number>(1);
     const [currentSection, setCurrentSection] = useState<number>(1);
 

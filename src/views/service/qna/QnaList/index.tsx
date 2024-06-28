@@ -1,14 +1,16 @@
 import React, { ChangeEvent, KeyboardEvent, useEffect, useState } from "react";
-import "./style.css";
-import { useUserStore } from "src/stores";
-import { useNavigate } from "react-router";
-import { AUTH_ABSOLUTE_PATH, QNA_DETAIL_ABSOLUTE_PATH, QNA_WRITE_ABSOLUTE_PATH } from "src/constant";
-import { BoardListItem } from "src/types";
-import { getSearchBoardListRequest } from "src/apis/board";
 import { useCookies } from "react-cookie";
+import { useNavigate } from "react-router";
+
+import { BoardListItem } from "src/types";
+import { useUserStore } from "src/stores";
+import usePagination from "src/hooks/pagination.hook";
 import ResponseDto from "src/apis/response.dto";
 import { GetBoardListResponseDto } from "src/apis/board/dto/response";
-import usePagination from "src/hooks/pagination.hook";
+import { getSearchBoardListRequest } from "src/apis/board";
+import { AUTH_ABSOLUTE_PATH, QNA_DETAIL_ABSOLUTE_PATH, QNA_WRITE_ABSOLUTE_PATH } from "src/constant";
+
+import "./style.css";
 
 //              component                //
 function Listitem({ receptionNumber, status, title, writerId, writeDatetime, viewCount }: BoardListItem) {
@@ -97,7 +99,7 @@ export default function QnaList() {
             return result;
         }
         const { boardList } = result as GetBoardListResponseDto;
-        changeBoardList(boardList);
+        changeBoardList(boardList, isToggleOn);
 
         setCurrentPage(!boardList.length ? 0 : 1);
         setCurrentSection(!boardList.length ? 0 : 1);

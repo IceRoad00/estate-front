@@ -5,7 +5,6 @@
     flex-direction: column;
 
     gap: 16px;
-
 }
 
 .qna-list-top {
@@ -18,11 +17,11 @@
     font-size: 16px;
     font-weight: 400;
 
-    color: rgba(138,146,166,1);
+    color: rgba(138, 146, 166, 1);
 }
 
 .qna-list-size-text .emphasis {
-    color: rgba(64,64,64,1);
+    color: rgba(64, 64, 64, 1);
 }
 
 .qna-list-top-right {
@@ -36,18 +35,17 @@
     font-weight: 400;
     line-height: 20px;
 
-    color: rgba(64,64,64,1);
+    color: rgba(64, 64, 64, 1);
 }
 
 .qna-list-table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgba(238,238,238,1);
+    border: 1px solid rgba(238, 238, 238, 1);
     border-radius: 8px;
 
-    background-color: rgba(255,255,255,1);
-
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .qna-list-table-th {
@@ -56,19 +54,19 @@
     padding: 15px 24px;
 
     gap: 95px;
-    
+
     font-size: 16px;
     font-weight: 700;
     text-align: center;
-    
-    color: rgba(64,64,64,1);
+
+    color: rgba(64, 64, 64, 1);
 }
 
 .qna-list-table-tr {
     display: flex;
     align-items: center;
     padding: 15px 24px;
-    border-top: 1px solid rgba(238,238,238,1);
+    border-top: 1px solid rgba(238, 238, 238, 1);
 
     gap: 95px;
 
@@ -77,12 +75,12 @@
     line-height: 20px;
     text-align: center;
 
-    color: rgba(64,64,64,1);
+    color: rgba(64, 64, 64, 1);
 }
 
 .qna-list-table-tr:hover {
     cursor: pointer;
-    color: rgba(238,238,238,0.8);
+    color: rgba(238, 238, 238, 0.8);
 }
 .qna-list-reception-number {
     width: 56px;
@@ -123,7 +121,7 @@
     display: flex;
     align-items: center;
 
-    gap: 24px; 
+    gap: 24px;
 }
 
 .qna-list-page-left {
@@ -156,7 +154,7 @@
     font-weight: 400;
     line-height: 20px;
 
-    color: rgba(148,146,166,1);
+    color: rgba(148, 146, 166, 1);
 
     cursor: pointer;
 }
@@ -166,7 +164,7 @@
     font-weight: 400;
     line-height: 20px;
 
-    color: rgba(64,64,64,1);
+    color: rgba(64, 64, 64, 1);
 
     cursor: default;
 }
@@ -178,9 +176,9 @@
 }
 
 .qna-list-search-input-box {
-    border: 1px solid rgba(238,238,238,1);
+    border: 1px solid rgba(238, 238, 238, 1);
     border-radius: 6px;
-    
+
     padding: 8px 16px;
     width: 168px;
 
